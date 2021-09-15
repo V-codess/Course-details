@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registration</title>
+     <!-- Google fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Open+Sans+Condensed:wght@700&display=swap" rel="stylesheet">
+    <style>
+        body{
+            margin: 0%;
+            text-align: center;
+            font-size: 1rem;
+            font-family: sans-serif;
+            background-color: rgb(89, 90, 95);
+            font-family: 'Open Sans Condensed', sans-serif;
+
+        }
+        #container{
+              background-color: rgb(211, 209, 212);
+              margin: 30px auto;
+              padding: 20px;
+              border-radius: 10%;
+              color: #000;
+              align-items: center;
+              display: inline-block;
+        }
+        .fn, .ln, .pn, .em, .gen, .co{
+            margin: 10px;
+            padding: 10px;
+            display: block;
+            text-shadow: 10px 5px 10px gray;
+        }
+        input[type=text], input[type=number], input[type=email]{
+            border: 2px solid #000;
+            box-shadow: 10px 10px 10px rgb(196, 193, 193);
+            border: none;
+        }
+        .btn{
+            margin: 10px;
+            padding: 5px;
+            border-radius: 20%;
+            border: none;           
+        }
+        #nav{
+            background-color: #fff;
+            color: rgb(89, 90, 95);
+            margin: 0%;
+            display: flex;
+            justify-content: center;
+            text-transform: uppercase;
+        }
+    </style>
+</head>
+<body>
+    <section id="nav">
+        <h1>COURSE signup</h1>
+    </section>
+    <section>
+    <form action="course.html">
+        <div id="container">
+        <div class="fn">
+        <input type="text" placeholder="First Name" required>
+        </div>
+        <div class="ln">
+        <input type="text" placeholder="Last Name"  required> 
+            </div>
+            <div class="pn">
+       <input type="number" maxlength="9" placeholder="Phone Number" required>
+    </div>
+    <div class="em">
+        <input type="email" placeholder="Email Address" required> 
+    </div>
+     <div class="gen">
+         <label for="gen">Gender:</label>
+        <input type="radio" name="gender" id=""> <label for="gender">Male</label> 
+        <input type="radio" name="gender" id=""> <label for="gender">Female</label> 
+        <input type="radio" name="gender" id=""> <label for="gender">Other</label> 
+    </div>
+    <div class="co">
+        <label for="course">Course:</label>
+        <select name="course" id="">
+            <option value="">Select</option>
+            <option value="">HTML</option>
+            <option value="">CSS</option>
+            <option value="">JavaScript</option>
+            <option value="">Bootstarp</option>
+            <option value="">Jquery</option>
+        </select>
+    </div>
+</div>
+</section>
+<div>
+    <button class="btn" type="submit">Submit</button>
+   </div>
+    </form>
+</body>
+</html>
